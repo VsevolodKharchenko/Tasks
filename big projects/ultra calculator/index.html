@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <head>
+	<title>Calculatorofff</title>
+	<script src="js/calculator.js"> </script>
+	<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>	  
+	<div class="container">
+	  <div class="item_input"><form name="form"><input type="text" class="typer" name="typer" size="173" readonly></form></div><br>
+	  <button class="clean rounded" onclick="clean()">C</button>
+	  <button class="er rounded" onclick="erase()"><-</button>
+	  <button class="skobka_open rounded" onclick="insert('(')">(</button>
+	  <button class="skobka_close" onclick="insert(')')">)</button>
+	  <button class="dot rounded" onclick="insert('.')">.</button>
+	  <button class="number1 rounded" onclick="insert('1')">1</button>
+	  <button class="number2 rounded" onclick="insert('2')">2</button>
+	  <button class="number3 rounded" onclick="insert('3')">3</button> <br>
+	  <button class="number4 rounded" onclick="insert('4')">4</button>
+	  <button class="number5 rounded" onclick="insert('5')">5</button>
+	  <button class="number6 rounded" onclick="insert('6')">6</button> <br>
+	  <button class="number7 rounded" onclick="insert('7')">7</button>
+	  <button class="number8 rounded" onclick="insert('8')">8</button>
+	  <button class="number9 rounded" onclick="insert('9')">9</button> <br>	  
+	  <button class="divide rounded" onclick="insert('/')">/</button>
+	  <button class="number0 rounded" onclick="insert('0')">0</button>
+	  <button class="mul rounded" onclick="insert('*')">*</button> <br>
+	  <button class="plus rounded" onclick="insert('+')">+</button>
+	  <button class="minus rounded" onclick="insert('-')">-</button>
+	  <button class="eq rounded" onclick="eq()">=</button> <br>	  
+	</div>
+    </body>

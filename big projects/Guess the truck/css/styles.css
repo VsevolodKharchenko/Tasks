@@ -1,0 +1,12 @@
+.container {
+	border: 10px solid black;
+	display: grid;
+	text-align: center;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.guess_result {
+	text-align: center;
+	font-size: 70px;
+	border: 10px solid black;
+}

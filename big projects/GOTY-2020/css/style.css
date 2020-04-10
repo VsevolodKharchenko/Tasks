@@ -1,0 +1,13 @@
+h1 {
+	text-align: center;
+	border: 8px solid black;
+}
+
+.container {
+	text-align: center;
+}
+
+.buttons {
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr;
+}
