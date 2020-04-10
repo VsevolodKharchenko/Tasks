@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator Super</title>
+	<meta name="description" content="description">
+	<meta name="author" content="author">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="screen">
+			<form name="form">
+				<input class="textview" name="textview" readonly> 
+			</form>
+		</div>
+		<div class="buttons flex-container">
+			<button class="button flex-element" value="7" onclick="insert('7')">7</button>
+			<button class="button flex-element" value="8" onclick="insert('8')">8</button>
+			<button class="button flex-element" value="9" onclick="insert('9')">9</button>
+			<button class="button flex-element darker_grey_color" value="/" onclick="insert('/')">/</button>
+		</div>
+		<div class="buttons flex-container">
+			<button class="button flex-element" value="4" onclick="insert('4')">4</button>
+			<button class="button flex-element" value="5" onclick="insert('5')">5</button>
+			<button class="button flex-element" value="6" onclick="insert('6')">6</button>
+			<button class="button flex-element darker_grey_color" value="*" onclick="insert('*')">x</button>
+		</div>
+		<div class="buttons flex-container">
+			<button class="button flex-element" value="1" onclick="insert('1')">1</button>
+			<button class="button flex-element" value="2" onclick="insert('2')">2</button>
+			<button class="button flex-element" value="3" onclick="insert('3')">3</button>
+			<button class="button flex-element darker_grey_color" value="-" onclick="insert('-')">--</button>
+		</div>
+		<div class="buttons flex-container">
+			<button class="button flex-element" value="0" onclick="insert('0')">0</button>
+			<button class="button flex-element darker_grey_color" value="clean" onclick="clean()">C</button>
+			<button class="button flex-element blue_color" value="=" onclick="equal()">=</button>
+			<button class="button flex-element darker_grey_color" value="+" onclick="insert('+')">+</button>
+		</div>
+	</div>
+</body>
+</html>

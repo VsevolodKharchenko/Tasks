@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="description" content="description">
+	<meta name="author" content="author">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="css/fonts.css"> -->
+	<link rel="stylesheet" href="css/styles.css"> 
+	<script src="js/script.js"></script>
+</head>
+
+<body>   
+	<div class="container">
+		<div class="container__image">
+			<img class="image" id = "sceneimg" src="img/scene1.jpg" alt = "Adventure Game"  /> 
+		</div>
+		<div class="container__phrase">
+			Please choose:
+		</div>
+		<div class="buttons">
+			<input type = "button" class="button-left" id = "decision1" 
+			value = "to the left" onclick = "changeScene(1)" />
+			
+			<input type = "button" class="button-right" id = "decision2" 
+			value = "to the right" onclick = "changeScene(2)" />
+		</div>
+	</div>
+</body>
+</html>
