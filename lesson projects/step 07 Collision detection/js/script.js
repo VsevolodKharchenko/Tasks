@@ -114,6 +114,7 @@ function draw() {
             alert("GAME OVER");
 			x = 240;
             y = 160;
+			bricks[c][r].status == 1;
 			paddleX = (canvas.width - paddleWidth) / 2;
             clearInterval(interval); // Needed for Chrome to end game
         }
