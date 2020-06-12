@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 10pt;
+	box-sizing: border-box; 
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none; 
+}
+
+body {
+	font-family: ;
+	background-image: url("city.gif");
+    background-repeat: repeat;
+}
+
+/*  ----- CONTAINER GENERAL  -----  */
+
+.container {
+	width: 1100px;
+	margin: 20px auto;	
+}
+
+.canvasDiv {
+	width: 600px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.controlPanel {
+	width: 500px;
+	padding: 50px 0;
+	background-color: grey;
+}
+
+.themes {
+	padding: 10px;
+	size: 18px;
+	color: yellow;
+}
+
+/* -----  HEADER  ----- */
+
+.container__header {} 
+
+.canvas {}
+
+.reloader, .levels, .settings {
+	text-align: left;
+	margin: 10px 10px 10px 20px;
+}
+
+/*  Theme buttons  */
+
+.grassButton, .footballButton, .wetButton, .metalButton {
+	border-radius: 3px;
+	color: yellow;
+	margin: 1px 6px;
+	padding: 5px 6px;
+	font-size: 16px;
+}
+
+.grassButton {
+	border: 1px solid #00e600;
+	background: #00e600;
+}
+
+.footballButton {
+	border: 1px solid #f2f2f2;
+	background: violet;
+}
+
+.wetButton {
+	border: 1px solid #0000cc;
+	background: #0000cc;
+}
+
+.metalButton {
+	border: 1px solid #8c8c8c;
+	background: #8c8c8c;
+	border: 1px solid white;
+}
+
+/*   Level buttons   */
+
+.easy, .normal, .hard, .nuclear {
+	border-radius: 3px;
+	color: white;
+	margin: 1px 6px;
+	padding: 5px 6px;
+	font-size: 16px;
+}
+
+.easy {
+	border: 1px solid #00e600;
+	background: #00e600;
+}
+
+.normal {
+	border: 1px solid #e6e619;
+	background: #e6e619;
+}
+
+.hard {
+	border: 1px solid orange;
+	background: orange;
+}
+
+.nuclear {
+	border: 1px solid red;
+	background: red;
+}
+
+/*  Function buttons   */
+
+.startButton, .pauseButton, .resetButton, .continueButton {
+	/*text-align: left;  */
+	border: 1px solid white;
+	border-radius: 3px;
+	background: green;
+	color: white;
+	margin: 2px 6px;
+	padding: 5px 6px;
+	font-size: 16px;
+}
+
+/*  Segments   */
+
+.segmentTitle {
+	padding: 5px 0 0 7px;
+	width: 95px;
+	/*border: 1px solid white; */
+	font-size: 18px;
+	color: white;
+}
+
+.segmentPanel {
+	width: 400px;
+	/*border: 1px solid yellow;*/
+	padding-left: 15px;
+}
+

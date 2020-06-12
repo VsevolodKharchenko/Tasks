@@ -1,0 +1,38 @@
+1. Change design:
+-move/remove titles (theme, sound etc.)
+-change colors(brighter/modern)
+-change fonts
+-change button design
+-make sensitive buttons(mouseover/onclick)
+-hide control panel when starting a game + add "show panel" button
+-work on snake backgrounds(better quality)
+
+2. Add animations:
+-blocks should disappear one by one when game over
+-animate "Game over"
+-add comments under "game over" depending on score(example: wow! 50 points! Good!)
+-add countdown at the beginning of the game
+
+3. Sounds:
+-change game over sound
+-find different background music
+-add volume settings (+, -, toggle music)
+-add sounds for every kind of obstacle
+
+4. Functions:
+-add lives counter(Lives left: [number])
+-change pause function to toggle function
+-improve difficulties(change speed)
+-make difficulty progression(make the game harder when you get a certain score)
+
+5. Community:
+-create a group in Viber/telegram to discuss how the game can be improved
+-add some kind of wiki/forum
+
+6. Obstacles
+-add power-ups(apples that gain more points, extra lifes etc.)
+-make moving obstacles
+-name each obstacle(simple, deadly, simple moving, deadly moving)
+
+
+

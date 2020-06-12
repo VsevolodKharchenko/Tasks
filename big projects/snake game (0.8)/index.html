@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Snake</title>
+	<meta name="description" content="description">
+	<meta name="author" content="author">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<div class="container flex-container">
+	    <div class="canvasDiv">
+	        <canvas id="canvas" width="600" height="600"></canvas> 
+        </div>
+        <div class="controlPanel">
+			<div class="reloader flex-container">
+			    <div class="segmentTitle">Themes:</div>
+				<div class="segmentPanel">
+					<button class="grassButton" onclick="setDefault()">Grass</button>
+					<button class="footballButton" onclick="setFootball()">Football</button>
+					<button class="wetButton" onclick="setWater()">Water</button>
+					<button class="metalButton" onclick="setMetal()">Metal</button>
+				</div>
+			</div>
+			<div class="levels flex-container">
+			    <div class="segmentTitle">Levels:</div>
+				<div class="segmentPanel">
+					<button class="easy" onclick="setEasy()">Toddler</button>
+					<button class="normal" onclick="setNormal()">Normal</button>
+					<button class="hard" onclick="setHard()">Hard</button>
+					<button class="nuclear" onclick="setNuclear()">!NUCLEAR H!</button>	
+				</div>
+			</div>
+			<div class="settings flex-container">
+			    <div class="segmentTitle">Functions:</div>
+				<div class="segmentPanel">
+					<button class="startButton" onclick="startGame()">Begin</button>
+					<button class="pauseButton" onclick="pauseGame()">Pause</button>
+					<button class="continueButton" onclick="startGame()">Continue</button>
+					<button class="resetButton" onclick="restart()">Clear</button>
+                </div>					
+			</div>			
+			<div class="settings flex-container">
+			    <div class="segmentTitle">Sounds:</div>
+				<div class="segmentPanel">
+					<button class="startButton" onclick="">+</button>
+					<button class="pauseButton" onclick="">-</button>
+					<button class="continueButton" onclick="">Pause</button>
+					<button class="resetButton" onclick="">Continue</button>
+					<button class="resetButton" onclick="">Next Tune</button>
+                </div>					
+			</div>
+        </div>	
+	</div>
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+body {
+  background: #2f2f2f;
+}
+
+.corner-button {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .02rem;
+  cursor: pointer;
+  background: transparent;
+  border: 0.5rem solid currentColor;
+  padding: 1.5rem 2rem;
+  font-size: 2.2rem;
+  color: #06c17f;
+  position: relative;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.corner-button:hover {
+  color: pink;
+}
+.corner-button:hover::before {
+  width: 0;
+}
+.corner-button:hover::after {
+  height: 0;
+}
+.corner-button:active {
+  border-width: 0.25rem;
+}
+.corner-button span {
+  position: relative;
+  z-index: 2;
+}
+.corner-button::before, .corner-button::after {
+  content: '';
+  position: absolute;
+  background: #2f2f2f;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.corner-button::before {
+  width: calc(100% - 3rem);
+  height: calc(101% + 1rem);
+  top: -0.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.corner-button::after {
+  height: calc(100% - 3rem);
+  width: calc(101% + 1rem);
+  left: -0.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Snake</title>
+	<meta name="description" content="description">
+	<meta name="author" content="author">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="css/fonts.css"> -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<!--  CONTAINER GENERAL -->
+	<div class="container">
+	    <canvas id="canvas" width="600" height="600"></canvas>        
+	</div>
+	<div class="reloader">
+	<button class="resetButton" onclick="restart()">Try again</button>
+	<button class="grassButton" onclick="changeDefault()">Grass theme</button>
+	<button class="footballButton" onclick="changeFootball()">Football theme</button>
+	<button class="wetButton" onclick="changeWater()">Water theme</button>
+	<button class="metalButton" onclick="changeMetal()">Metal theme</button>
+	</div>
+	<div class="difficulties">
+	<button class="easy" onclick="getTimerValue(300)">Toddler mode</button>
+	<button class="normal" onclick="getTimerValue(50)">Normal mode</button>
+	<button class="hard" onclick="setHard()">Hard mode</button>
+	<button class="nuclear" onclick="setNuclear()">!!!NUCLEAR HAZARD MODE!!!</button>
+	
+	</div>
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
