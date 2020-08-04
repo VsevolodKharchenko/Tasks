@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Snake</title>
+	<meta name="description" content="description">
+	<meta name="author" content="author">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;515;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container flex-container">
+	    <div class="canvasDiv">
+	        <canvas controls id="canvas" width="600" height="600"></canvas> 
+        </div>
+        <div class="controlPanel" id="control">
+			<div class="reloader flex-container">
+				<div class="segmentPanel">
+					<button class="grassButton a shadow" onclick="setDefault()">Grass</button>
+					<button class="footballButton a shadow" onclick="setFootball()">Football</button>
+					<button class="wetButton a shadow" onclick="setWater()">Water</button>
+					<button class="metalButton a shadow" onclick="setMetal()">Metal</button>
+				</div>
+			</div>
+			<div class="levels flex-container">
+				<div class="segmentPanel">
+					<button class="easy  shadow" onclick="setEasy()">Toddler</button>
+					<button class="normal a shadow" onclick="setNormal()">Normal</button>
+					<button class="hard a shadow" onclick="setHard()">Hard</button>
+					<button class="nuclear a shadow" onclick="setNuclear()">!NUCLEAR!</button>	
+				</div>
+			</div>
+			<div class="settings flex-container">
+				<div class="segmentPanel">
+					<button class="startButton settingsA settingsShadow" onclick="startGame()">Start game</button>
+					<button class="pauseButton settingsA settingsShadow" onclick="pauseGame()">Pause</button>
+					<button class="continueButton settingsA settingsShadow" onclick="continueGame()">Continue</button>
+					<button class="resetButton settingsA settingsShadow" onclick="restart()">Try again</button>
+                </div>					
+			</div>			
+			<div class="settings flex-container">
+				<div class="segmentPanel">
+					<button class="startButton settingsA settingsShadow" onclick="increaseVolume()">voulme +</button>
+					<button class="pauseButton settingsA settingsShadow" onclick="decreaseVolume()">volume -</button>
+					<button class="continueButton settingsA settingsShadow" onclick="">ON/OFF</button>
+					<button class="fullScreenButton settingsA settingsShadow" onclick="openFullscreen()">Fullscreen</button>
+                </div>			
+			</div>
+			<div class="settings videoBox">
+			    <iframe class="video" width="420" height="236" src="https://www.youtube.com/embed/kZr8sR9Gwag?start=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+        </div>	
+	</div>
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+Design:
+Make good usable design ++
+make it fit on a google page ++
+change colors, make them different ++
+work on design of all elements ++
+
+sound: 
+add background music++
+music toggle/volume buttons++
+make hit sounds ++
+
+functions:
+fix hit registration ++
+add "startGame()" function ++
+fix endless game bug ++

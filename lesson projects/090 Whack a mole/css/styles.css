@@ -1,0 +1,74 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: black;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 618px;
+  height: 618px;
+}
+
+.mole {
+  background-image: url('../img/mole_appear.png');
+  background-size: cover;
+}
+
+.mole:active {
+  background-image: url('../img/mole_hurt.png');
+}
+
+body{
+	background: url(../img/background.jpg);
+}
+
+
+.gameDiv{
+	margin: 20px auto;
+}
+
+.flex-container{
+	display: flex;
+}
+
+
+
+.panel{
+	margin-left: 250px;
+	/*background: linear-gradient(-45deg, #22039c, #2c05c7, #920ba5, #7a058a );*/
+	background-image: url('../img/panel_background.jpg');
+	background-size: 200% 100%;
+	animation: gradient 15s ease infinite;
+}
+
+h1, h2, el, button{
+	font-family: 'Dosis', sans-serif;
+	color: #e9c44e;
+	border: 2px solid #2b0053;
+	border-radius: 1px;
+	background: #2b0053;
+	opacity: 0.9;
+}
+
+.grid{
+	opacity: 0.97;
+    margin-right: 250px;
+	background: #502974;
+}

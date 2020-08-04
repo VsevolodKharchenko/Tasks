@@ -1,0 +1,13 @@
+design: 
+-change fonts++
+-add backgrounds++
+-change colors++
+-move everything++
+-remove the white line on the left++
+-make everything bigger(opt.)++
+
+functions:
+-add score system(opt.)
+
+sound:
+-add music

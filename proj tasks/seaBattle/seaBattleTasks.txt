@@ -1,0 +1,7 @@
+design:
+-make everything lower++
+-add a background image
+
+functions:
+-a cell should change its color on "onclick"
+-work on cpu's cell randomizing

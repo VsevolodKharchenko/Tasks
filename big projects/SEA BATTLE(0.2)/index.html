@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sea battle</title>
+	<meta name="description" content="description">
+	<meta name="author" content="author">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="css/fonts.css"> -->
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<!--  CONTAINER GENERAL -->
+	<div class="container flex-container">
+	    <div class="playerTable">
+			<table>
+			  <tr>
+				<th> </th>
+				<th class="letter">A</th>
+				<th class="letter">B</th>
+				<th class="letter">C</th>
+				<th class="letter">D</th>
+				<th class="letter">E</th>
+				<th class="letter">F</th>
+				<th class="letter">G</th>
+				<th class="letter">H</th>
+				<th class="letter">I</th>
+				<th class="letter">J</th>
+			  </tr>
+			  <tr>
+				<td class="number">1</td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+			  </tr>
+			  <tr>
+				<td class="number">2</td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+			  </tr>
+			   <tr>
+				<td class="number">3</td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+			  </tr>
+			  <tr>
+				<td class="number">4</td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+			  </tr> <tr>
+				<td class="number">5</td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+			  </tr>
+			  <tr>
+				<td class="number">6</td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+			  </tr>
+			   <tr>
+				<td class="number">7</td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+			  </tr>
+			  <tr>
+				<td class="number">8</td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+			  </tr>
+			   <tr>
+				<td class="number">9</td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+			  </tr>
+			  <tr>
+				<td class="number">0</td>
+				<td class="playerField" id="playerplayerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+				<td class="playerField" id="playerFieldCell"></td>
+			  </tr>
+			  
+			</table>
+		    <h1 class="playerName">Player</h1>
+		</div>
+
+<div class="playerTable">
+			<table>
+			  <tr>
+				<th> </th>
+				<th class="cpuLetter">A</th>
+				<th class="cpuLetter">B</th>
+				<th class="cpuLetter">C</th>
+				<th class="cpuLetter">D</th>
+				<th class="cpuLetter">E</th>
+				<th class="cpuLetter">F</th>
+				<th class="cpuLetter">G</th>
+				<th class="cpuLetter">H</th>
+				<th class="cpuLetter">I</th>
+				<th class="cpuLetter">J</th>
+			  </tr>
+			  <tr>
+				<td class="cpuNumber">1</td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+			  </tr>
+			  <tr>
+				<td class="cpuNumber">2</td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+			  </tr>
+			   <tr>
+				<td class="cpuNumber">3</td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+			  </tr>
+			  <tr>
+				<td class="cpuNumber">4</td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+			  </tr> <tr>
+				<td class="cpuNumber">5</td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+			  </tr>
+			  <tr>
+				<td class="cpuNumber">6</td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+			  </tr>
+			   <tr>
+				<td class="cpuNumber">7</td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+			  </tr>
+			  <tr>
+				<td class="cpuNumber">8</td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+			  </tr>
+			   <tr>
+				<td class="cpuNumber">9</td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+			  </tr>
+			  <tr>
+				<td class="cpuNumber">0</td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+				<td class="cpuField"></td>
+			  </tr>
+			  
+			</table>
+		    <h1 class="cpuName">CPU</h1>
+		</div>		
+	</div>
+</body>
+</html>
