@@ -1,19 +1,24 @@
 let cvs = document.getElementById("canvas");
 let ctx = cvs.getContext("2d");
+ctx.hidden = true;
 let restartButton = document.getElementById("restartButton")
-let startButton = document.getElementById("startButton")
-// load images
 restartButton.hidden = true;
-
-
-function EndCode(){ Error.apply(this, arguments); this.name = "Game Over"; }
-EndCode.prototype = Object.create(Error.prototype);
-
+let startButton = document.getElementById("startButton")
 let bird = new Image();
 let bg = new Image();
 let pipeNorth = new Image();
 let fg = new Image();
 let pipeSouth = new Image();
+// load images
+
+
+ctx.drawImage(bg,0,0);
+ctx.drawImage(fg,0,cvs.height - fg.height);
+
+function EndCode(){ Error.apply(this, arguments); this.name = "Game Over"; }
+EndCode.prototype = Object.create(Error.prototype);
+
+
 
 bird.src = "images/bird.png";
 bg.src = "images/bg.png";
@@ -30,7 +35,7 @@ let constant;
 let bX = 10;
 let bY = 150;
 
-let gravity = 1.5;
+let gravity = 2.25;
 
 let score = 0;
 
@@ -44,7 +49,7 @@ scor.src = "sounds/score.mp3";
 
 // on key down
 
-document.addEventListener("mousedown",moveUp);
+document.addEventListener("keydown",moveUp);
 
 function moveUp(){
     bY -= 30;
@@ -66,9 +71,12 @@ function restart(){
 // draw images
 
 function draw(){
+	let safeVar = 1;
+	if (safeVar === 1){
+	ctx.hidden = false;
     startButton.hidden = true;
     ctx.drawImage(bg,0,0);
-    
+    let animationFrame = requestAnimationFrame(draw);
     
     for(var i = 0; i < pipe.length; i++){
         
@@ -77,7 +85,6 @@ function draw(){
         ctx.drawImage(pipeSouth,pipe[i].x,pipe[i].y+constant);
              
         pipe[i].x--;
-        
         if( pipe[i].x == 125 ){
             pipe.push({
                 x : cvs.width,
@@ -94,11 +101,9 @@ function draw(){
 			|| bY + bird.height >= 512){
 				restartButton.hidden = false;
 				gravity = 0;
-				pipe[i].x++
 				//console.log(pipe[i])
-				cancelAnimationFrame(draw)
-				document.removeEventListener("keydown",moveUp)
-				bY = cvs.height - fg.height - bird.height
+				cancelAnimationFrame(animationFrame)
+				document.removeEventListener("keydown",moveUp) 
         } 
         
         if(pipe[i].x == 5){
@@ -119,7 +124,11 @@ function draw(){
     ctx.font = "20px Verdana";
     ctx.fillText("Score : "+score,10,cvs.height-20);
     
-    requestAnimationFrame(draw);
     
+	safeVar++;
+    
+} else {
+	console.log("game's safe now")
+}
 }
 
