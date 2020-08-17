@@ -1,6 +1,12 @@
 Functions:
 -fix unkillable bird bug ++
 -make a startGame() button and function++
--make a normal game over 
+-make a normal game over  ++
 -understand the code +
--fix stacking pipe bug
+-fix stacking pipe bug ++
+
+DONE! DONE! DONE!
+
+Design:
+-Make user-friendly interface
+-add a background

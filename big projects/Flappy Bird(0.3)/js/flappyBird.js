@@ -1,6 +1,6 @@
 let cvs = document.getElementById("canvas");
 let ctx = cvs.getContext("2d");
-ctx.hidden = true;
+cvs.hidden = true;
 let restartButton = document.getElementById("restartButton")
 restartButton.hidden = true;
 let startButton = document.getElementById("startButton")
@@ -65,6 +65,8 @@ pipe[0] = {
     y : 0
 };
 
+
+
 function restart(){
 	location.reload();
 }
@@ -73,7 +75,7 @@ function restart(){
 function draw(){
 	let safeVar = 1;
 	if (safeVar === 1){
-	ctx.hidden = false;
+	cvs.hidden = false;
     startButton.hidden = true;
     ctx.drawImage(bg,0,0);
     let animationFrame = requestAnimationFrame(draw);
