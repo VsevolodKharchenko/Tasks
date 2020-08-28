@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong Game JavaScript</title>
+    <style>
+        html, body{
+            background-image: url('img/background.jpg');
+			height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #pong{
+            border: 2px solid #fff;
+			border-left-color: #100f10;
+			border-right-color: #100f10;
+            position: absolute; 
+            margin :auto;
+            top:0;
+            right:0;
+            left:0;
+            bottom:0;
+			background-image: url('img/pongBackground.jpg');
+        }
+		button{
+			text-align: center;
+			background-color: gainsboro;
+			padding: 40px;
+			margin-top: 632px;
+		}
+		div{
+			text-align: center;
+		}
+    </style>
+	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+</head>
+<body>
+   <canvas id="pong" width="600" height="400"></canvas>
+   <div class="buttons">
+   <button id="startButton" onclick="startGame()">Start!</button>
+   <button id="restartButton" onclick="location.reload()">Try again</button>
+   </div>
+   <script src="pong.js"></script>
+</body>
+</html>

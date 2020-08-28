@@ -2,9 +2,9 @@ functions:
 -make better game over++
 -add sounds/background music(landing of a block, clearing out a row of blocks)
 -make game faster ++
--add toggle pause/continue button+
--add difficulties progression depending on the amount of points
+-add toggle pause/continue button++
+-add difficulties progression depending on the amount of points ++
 -add start button ++
 
 design(opt.):
--make better and user-friendly interface
+-make better and user-friendly interface ++

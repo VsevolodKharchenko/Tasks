@@ -1,0 +1,8 @@
+1. Change background, color of the board ++
+2. add start/pause buttons +
+3. add a gameOver and game over message +
+4. make score positions symmetrical++
+(opt.):
+-make difficulties
+-find a better, more fitting and classic font for the game ++
+-make a two-ball difficulty

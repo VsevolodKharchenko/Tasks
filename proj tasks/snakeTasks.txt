@@ -12,7 +12,7 @@ DONE! DONE! DONE!
 
 
 2. Add animations:
--blocks should disappear one by one when game over
+-blocks should disappear one by one when game over(opt.)
 -animate "Game over" ++
 -add comments under "game over" depending on score(example: wow! 50 points! Good!) ++
 -add countdown at the beginning of the game
@@ -29,7 +29,7 @@ DONE! DONE! DONE!
 -improve difficulties(change speed) 
 -make difficulty progression(make the game harder when you get a certain score)
 
-5. Community:
+5. Community(opt.):
 -create a group in Viber/telegram to discuss how the game can be improved
 -add some kind of wiki/forum
 

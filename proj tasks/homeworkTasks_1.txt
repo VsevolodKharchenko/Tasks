@@ -1,0 +1,2 @@
+1.Make an eventListener that randomly changes background color
+2.Make an eventListener that will make some animation(object movement from one point to another and back)

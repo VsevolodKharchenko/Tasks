@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tetris!</title>
+  <!--<script src="js/app.js" charset="utf-8"></script>-->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <!--<div>Tetris!</div><br>-->
+    <canvas id="tetris" width="300" height="600"></canvas>
+    <div class="scoreDiv">
+        Score: <div id="score">0</div>
+    </div>
+	<div class="buttons">
+	<button class="startGameButton" id="startGame" onclick="drop()">Start!</button>
+	<button class="pauseGameButton" id="pauseGame" onclick="pauseGame()">pause</button>
+	<button class="continueGameButton" id="continueGame" onclick="continueGame()">continue</button>
+	<button class="restartGameButton" id="restartGame" onclick="location.reload()">Game Over! Your score is: </button>
+	</div>  
+	<script src="js/tetrominoes.js"></script>
+    <script src="js/tetris.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
