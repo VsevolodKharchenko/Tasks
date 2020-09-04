@@ -1,0 +1,137 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 10pt;
+	/*box-sizing: border-box; */
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none; 
+}
+body {
+	background-image: url('../img/background2.jpg')
+}
+
+/*  ----- CONTAINER GENERAL  -----  */
+
+.container {
+	max-width: 1249px;
+	margin: 0 auto;
+	background-color: #090909;
+	padding-bottom: 444px;
+}
+
+/* -----  HEADER  ----- */
+
+
+.logo{
+	text-align: center;
+	padding-top: 65px;
+}
+
+.headerText{
+	color: white;
+	font-family: Alata;
+	text-align: center;
+}
+
+.name{
+	font-size: 30px;
+	margin-top: 4px;
+	margin-bottom: 9px;
+}
+
+.borderLine{
+	margin: 50px auto;
+	width: 1059px;
+	height: 1px;
+	background: #C4C4C4;
+	border: 3px solid #C4C4C4;
+	border-radius: 2px;
+	box-sizing: border-box;
+	transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.row{
+	display: flex;
+}
+
+.textBlock1, .textBlock2, .textBlock3{
+	margin: -2px;
+	text-align: right;
+	position: absolute;
+	width: 383px;
+	height: 141px;
+    margin-left: 100px;
+	background: #C4C4C4;
+	border-top-left-radius: 35px;
+}
+
+.imageBlock1, .imageBlock2, .imageBlock3{
+	margin: -2px;
+	width: 383px;
+	height: 141px;
+    margin-left: 483px;
+	background-image: url('../img/image1.jpg');
+	border: 6px solid #C4C4C4;
+	border-bottom: 0px;
+	border-left: 0px;
+	box-sizing: border-box;
+}
+
+.textBlock2{
+	text-align: left;
+    margin-left: 483px;
+	border-top-left-radius: 0px;
+}
+
+.imageBlock2{
+    margin-left: 100px;
+	background-image: url('../img/image2.jpg');
+	border-top: 0px;
+	border-left: 6px solid #C4C4C4;
+}
+
+.textBlock3{
+	border-bottom-left-radius: 35px;
+	border-top-left-radius: 0px;
+}
+
+.imageBlock3{
+	background-image: url('../img/image3.jpg');
+    margin-left: 483px;
+	border-top: 0px;
+	border-bottom: 6px solid #C4C4C4;
+}
+
+.newestText{
+	position: absolute;
+	width: 247px;
+	height: 210px;
+	background: #C4C4C4;
+	margin-left: 905px;
+	margin-top: 72px;
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+}
+
+.newestImage{
+	position: absolute;
+	width: 247px;
+	height: 217px;
+    margin-left: 905px;
+	margin-bottom: 200px;
+	background: #343434;
+	border: 5px solid #C4C4C4;
+	border-bottom: 0px;
+	box-sizing: border-box;
+}
+
+.blockText{
+	margin: 12px 6px 0 6px;
+	font-family: 'Alata';
+	font-size: 14px;
+}
+
