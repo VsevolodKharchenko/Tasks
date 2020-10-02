@@ -1,0 +1,7 @@
+Battleship(lesson ver.) improvement list
+-change colors ++
+-make paper-like background
+-limit the amount of tries(make it 21)++
+-make the game stop when you lose/win ++
+
+
